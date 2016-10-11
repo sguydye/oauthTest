@@ -69,7 +69,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
         endpoints
                 .authenticationManager(authenticationManager)
                 .accessTokenConverter(accessTokenConverter())
-                .tokenServices(tokenService());
+                .tokenStore(tokenStore());
     }
 
     @Primary
